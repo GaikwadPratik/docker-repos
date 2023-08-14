@@ -21,6 +21,7 @@ RUN apt-get update \
               bash-completion \
               shellcheck \
               whois \
+              make \
     && add-apt-repository ppa:longsleep/golang-backports \
     && add-apt-repository ppa:git-core/ppa \
     && echo 'deb [trusted=yes] https://repo.goreleaser.com/apt/ /' | tee /etc/apt/sources.list.d/goreleaser.list \
