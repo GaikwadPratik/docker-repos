@@ -90,6 +90,7 @@ RUN curl -sSL https://rover.apollo.dev/nix/latest | sh \
   && go install golang.org/x/tools/cmd/goimports@latest \
   && go install github.com/rogpeppe/godef@latest \
   && go install google.golang.org/protobuf/cmd/protoc-gen-go@latest \
-  && go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
+  && go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest \
+  && go clean -cache -modcache
 
 WORKDIR "${WORKDIR}"
